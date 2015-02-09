@@ -24,7 +24,12 @@
 
 
 ## makeCacheMatrix: This function creates a special "matrix" object 
-## that can cache its inverse. 
+## that can store a matrix and cache its inverse.
+## it returns a list containing functions to
+##    set the matrix
+##    get the matrix
+##    set the inverse of the matrix
+##    get the inverse of the matrix
 
 makeCacheMatrix <- function(x = matrix()) {
         m_inv <- NULL
